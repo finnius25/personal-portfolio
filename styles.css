@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Babylonica&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Babylonica', cursive;
+    font-family: 'Inter', sans-serif; */
+
+    :root {
+        --primary-color: #E97720;
+        --background-color: #FFFCEB;
+    }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+input, button, textarea {
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+    position: relative;
+    z-index: 0;
+}
+
+/* Nav */
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3.125rem;
+    z-index: 1;
+}
+
+.nav-section {
+    width: 70rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.brand-name {
+    font-family: 'Babylonica', cursive;
+    font-size: 3rem;
+}
+
+.nav-items {
+    display: flex;
+    width: 23.5rem;
+    justify-content: space-between;
+}
+.nav-link:hover {
+    color: var(--primary-color)
+}
+
+.nav-home {
+    font-weight: 700;
+}
+.nav-home:hover {
+    color: black;
+}
+
+.action-call {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+/* Background Circles */
+.background-circles {
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+}
+
+
+
