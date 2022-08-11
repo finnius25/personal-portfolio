@@ -86,7 +86,54 @@ nav {
     width: 100vw;
     height: 100%;
     position: absolute;
+    z-index: 0;
+}
+.background-circles img {
+    z-index: 0;
 }
 
+/* Hero */
 
+.hero-container {
+    display: flex;
+    margin-top: 7.2rem;
+    width: 100%;
+    padding-left: 8rem;
+    z-index: 1;
+}
 
+.hero-img-container {
+    width: 17.3125rem;
+    height: 16.5625rem;
+}
+.hero-img-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-content-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 4rem;
+    padding-top: 1rem;
+}
+.hero-content-container h1 {
+    font-size: 4.06rem;
+}
+.hero-finney {
+    color: var(--primary-color);
+}
+
+.hero-content-bio {
+    font-size: 2.25rem;
+    font-weight: 200;
+    line-height: 150%;
+}
+
+.hero-content-portfolio {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+.hero-content-portfolio span img {
+    width: 1.3rem;
+}
