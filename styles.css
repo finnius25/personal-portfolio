@@ -37,6 +37,13 @@ body {
     z-index: 0;
 }
 
+/* Section 1 */
+
+.section1 {
+    width: 100%;
+    height: 100vh;
+}
+
 /* Nav */
 
 nav {
@@ -137,3 +144,53 @@ nav {
 .hero-content-portfolio span img {
     width: 1.3rem;
 }
+
+
+/* Section 2 */
+
+.section2 {
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 6.1875rem;
+    padding-left: 8.8125rem;
+    padding-right: 8.8125rem;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: 21.625rem 21.625rem 21.625rem;
+    gap: 3.75rem;
+}
+
+.project {
+    width: 21.625rem;
+    cursor: pointer;
+}
+
+.project img {
+    width: 100%;
+    height: 7.510625rem;
+    object-fit: cover;
+}
+
+.project h1 {
+    margin-top: 1.875rem;
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+    font-size: 1.5625rem;
+}
+
+.project p {
+    line-height: 150%;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.arrow-down {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    cursor: pointer;
+}
+
+
