@@ -29,12 +29,15 @@ input, button, textarea {
 }
 
 body {
-    min-height: 100vh;
-    line-height: 1.5;
     font-family: 'Inter', sans-serif;
     background-color: var(--background-color);
-    position: relative;
-    z-index: 0;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    width: 100%;
+    min-height: 100vh;
 }
 
 /* Section 1 */
@@ -194,3 +197,61 @@ nav {
 }
 
 
+/* Section 3 */
+.section3 {
+    width: 100%;
+    height: 100vh;
+    padding-top: 11.25rem;
+    margin-bottom: 11.25rem;
+    padding-right: 24.0625rem;
+    padding-left: 24.0625rem;
+}
+
+.contact-container {
+    width: 41.9375rem;
+    height: 41.9375rem;
+}
+
+
+.contact-circle {
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 10.25rem;
+    padding-left: 6rem;
+}
+.contact-form input::placeholder {
+    color: white;
+    opacity: 0.5;
+}
+.contact-form input {
+    background: none;
+    font-size: 3rem;
+    color: white;
+}
+.linebreak {
+    width: 29.75rem;
+    height: 0.1rem;
+    background-color: white;
+    margin-bottom: 3rem;
+}
+
+.contact-form-btn-container {
+    display: flex;
+    justify-content: end;
+    padding-right: 6.3rem;
+}
+#contact-form-btn {
+    background-color: white;
+    color: var(--primary-color);
+    width: 8.375rem;
+    border-radius: 1.25rem;
+    cursor: pointer;
+}
