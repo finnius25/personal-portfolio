@@ -253,5 +253,6 @@ nav {
     color: var(--primary-color);
     width: 8.375rem;
     border-radius: 1.25rem;
+    font-size: 3rem;
     cursor: pointer;
 }
