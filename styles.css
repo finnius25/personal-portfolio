@@ -2,10 +2,11 @@
 /* font-family: 'Babylonica', cursive;
     font-family: 'Inter', sans-serif; */
 
-    :root {
-        --primary-color: #E97720;
-        --background-color: #FFFCEB;
-    }
+:root {
+    --primary-color: #E97720;
+    --background-color: #FFFCEB;
+    --cursive-font: 'Babylonica', cursive;
+}
 
 * {
     box-sizing: border-box;
@@ -36,15 +37,16 @@ body {
 }
 
 section {
-    width: 100%;
+    min-width: 100%;
     min-height: 100vh;
 }
 
 /* Section 1 */
 
 .section1 {
-    width: 100%;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Nav */
@@ -53,82 +55,68 @@ nav {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 3.125rem;
-    z-index: 1;
+    margin: 3.125rem auto 4rem;
 }
 
 .nav-section {
-    width: 70rem;
+    width: 70em;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.5em;
+    padding: 0 1.5em;
 }
 
 .brand-name {
-    font-family: 'Babylonica', cursive;
-    font-size: 3rem;
+    font-family: var(--cursive-font);
+    font-size: 2em;
 }
 
 .nav-items {
-    display: flex;
-    width: 23.5rem;
-    justify-content: space-between;
-}
-.nav-link:hover {
-    color: var(--primary-color)
-}
-
-.nav-home {
-    font-weight: 700;
-}
-.nav-home:hover {
-    color: black;
+    display: none;
 }
 
 .action-call {
-    color: var(--primary-color);
-    font-weight: 700;
+    display: none;
 }
 
-/* Background Circles */
-.background-circles {
-    width: 100vw;
-    height: 100%;
-    position: absolute;
-    z-index: 0;
+.navbar-toggle-btn {
+    display: block;
+    width: 2rem;
+    cursor: pointer;
 }
-.background-circles img {
-    z-index: 0;
+.navbar-toggle-btn img {
+    display: block;
+    width: 100%;
 }
 
 /* Hero */
 
 .hero-container {
     display: flex;
-    margin-top: 7.2rem;
-    width: 100%;
-    padding-left: 8rem;
-    z-index: 1;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero-img-container {
-    width: 17.3125rem;
-    height: 16.5625rem;
+    min-height: 10em;
+    max-width: 17em;
 }
+
 .hero-img-container img {
+    display: block;
     width: 100%;
-    height: 100%;
 }
 
 .hero-content-container {
     display: flex;
     flex-direction: column;
-    padding-left: 4rem;
-    padding-top: 1rem;
+    margin: 2em auto;
 }
+
 .hero-content-container h1 {
     font-size: 4.06rem;
+    text-align: center;
 }
 .hero-finney {
     color: var(--primary-color);
@@ -138,31 +126,33 @@ nav {
     font-size: 2.25rem;
     font-weight: 200;
     line-height: 150%;
+    text-align: center;
 }
 
 .hero-content-portfolio {
     margin-top: 0.5rem;
     font-size: 1rem;
+    text-align: center;
 }
 .hero-content-portfolio span img {
     width: 1.3rem;
+    cursor: pointer;
 }
 
-
-/* Section 2 */
+/* section 2 */
 
 .section2 {
-    width: 100%;
-    height: 100vh;
-    padding-bottom: 6.1875rem;
-    padding-left: 8.8125rem;
-    padding-right: 8.8125rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .projects-container {
     display: grid;
-    grid-template-columns: 21.625rem 21.625rem 21.625rem;
+    grid-template-columns: 21.625rem;
     gap: 3.75rem;
+    margin: 2em auto;
 }
 
 .project {
@@ -172,13 +162,12 @@ nav {
 
 .project img {
     width: 100%;
-    height: 7.510625rem;
+    max-height: 7.510625rem;
     object-fit: cover;
 }
 
 .project h1 {
-    margin-top: 1.875rem;
-    margin-bottom: 0.8rem;
+    margin: 1.875rem auto 0.8rem;
     font-weight: 700;
     font-size: 1.5625rem;
 }
@@ -189,43 +178,21 @@ nav {
     font-size: 1rem;
 }
 
-.arrow-down {
+/* Section 3 */
+
+.section3 {
     display: flex;
     justify-content: center;
-    margin-top: 3rem;
-    cursor: pointer;
-}
-
-
-/* Section 3 */
-.section3 {
-    width: 100%;
-    height: 100vh;
-    padding-top: 11.25rem;
-    margin-bottom: 11.25rem;
-    padding-right: 24.0625rem;
-    padding-left: 24.0625rem;
-}
-
-.contact-container {
-    width: 41.9375rem;
-    height: 41.9375rem;
-}
-
-
-.contact-circle {
+    align-items: center;
     background-color: var(--primary-color);
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding-top: 10.25rem;
-    padding-left: 6rem;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 2em;
 }
 .contact-form input::placeholder {
     color: white;
@@ -233,26 +200,177 @@ nav {
 }
 .contact-form input {
     background: none;
-    font-size: 3rem;
+    font-size: 2rem;
     color: white;
 }
 .linebreak {
-    width: 29.75rem;
+    width: 29rem;
     height: 0.1rem;
     background-color: white;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .contact-form-btn-container {
     display: flex;
     justify-content: end;
-    padding-right: 6.3rem;
+    width: 100%;
+    padding-right: 3rem;
 }
-#contact-form-btn {
+.contact-form-btn-container input {
     background-color: white;
     color: var(--primary-color);
-    width: 8.375rem;
-    border-radius: 1.25rem;
-    font-size: 3rem;
+    border-radius: 0.5em;
+    font-size: 2rem;
     cursor: pointer;
+    padding: 0.2em 0.5em;
 }
+
+
+@media (min-width: 43rem) {
+    .nav-items {
+        display: flex;
+        width: 23.5rem;
+        justify-content: space-between;
+    }
+    .nav-link:hover {
+        color: var(--primary-color)
+    }
+    
+    .nav-home {
+        font-weight: 700;
+    }
+    .nav-home:hover {
+        color: black;
+    }
+    
+    .action-call {
+        display: block;
+        color: var(--primary-color);
+        font-weight: 700;
+    }
+    
+    .navbar-toggle-btn {
+        display: none;
+    }
+}
+
+@media(min-width: 50rem) {
+    .projects-container {
+        display: grid;
+        grid-template-columns: 21.625rem 21.625rem;
+        gap: 3.75rem;
+    }
+}
+
+@media(min-width: 58rem) {
+    .hero-container {
+        display: flex;
+        flex-direction: row;
+        margin-top: 5rem;
+        width: 100%;
+    }
+    
+    .hero-img-container {
+        display: block;
+        width: 17em;
+        margin-left: 2em;
+    }
+    .hero-img-container img {
+        display: block;
+        width: 100%;
+    }
+    
+    .hero-content-container {
+        display: flex;
+        flex-direction: column;
+        padding-left: 4rem;
+        padding-top: 1rem;
+        margin: 0;
+    }
+    .hero-content-container h1, .hero-content-bio, .hero-content-portfolio {
+        text-align: left;
+    }
+
+    .section3 {
+        background-color: var(--background-color);
+    }
+
+    .contact-container {
+        width: 41.9375rem;
+        height: 41.9375rem;
+    }
+
+    .contact-circle {
+        background-color: var(--primary-color);
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-top: 10.25rem;
+        padding-left: 6rem;
+    }
+    .contact-form input::placeholder {
+        color: white;
+        opacity: 0.5;
+    }
+    .contact-form input {
+        background: none;
+        font-size: 3rem;
+        color: white;
+    }
+    .linebreak {
+        width: 29.75rem;
+        height: 0.1rem;
+        background-color: white;
+        margin-bottom: 3rem;
+    }
+
+    .contact-form-btn-container {
+        display: flex;
+        justify-content: end;
+        padding-right: 6.3rem;
+    }
+    .contact-form-btn-container input {
+        background-color: white;
+        color: var(--primary-color);
+        width: 8.375rem;
+        border-radius: 1.25rem;
+        font-size: 3rem;
+        cursor: pointer;
+    }
+}
+
+@media(min-width: 72rem) {
+    .projects-container {
+        display: grid;
+        grid-template-columns: 21.625rem 21.625rem 21.625rem;
+        gap: 3.75rem;
+    }
+
+/* .arrow-down {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    cursor: pointer;
+} */
+}
+
+/* Background Circles */
+/* .background-circles {
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+}
+.background-circles img {
+    z-index: 0;
+} */
+
+
+
+/* Section 3 */
