@@ -14,6 +14,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 ul {
     list-style: none;
 }
@@ -21,6 +25,7 @@ ul {
 a {
     text-decoration: none;
     color: inherit;
+    scroll-behavior: smooth;
 }
 
 input, button, textarea {
@@ -88,6 +93,30 @@ nav {
 .navbar-toggle-btn img {
     display: block;
     width: 100%;
+}
+
+.active-nav {
+    background: var(--background-color);
+    /* color: var(--background-color); */
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8rem;
+}
+.active-nav-item {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+.active-menu {
+    position: fixed;
+    right: 2.35rem;
+    top: 4.2rem;
 }
 
 /* Hero */
@@ -351,26 +380,5 @@ nav {
         grid-template-columns: 21.625rem 21.625rem 21.625rem;
         gap: 3.75rem;
     }
-
-/* .arrow-down {
-    display: flex;
-    justify-content: center;
-    margin-top: 3rem;
-    cursor: pointer;
-} */
 }
 
-/* Background Circles */
-/* .background-circles {
-    width: 100vw;
-    height: 100%;
-    position: absolute;
-    z-index: 0;
-}
-.background-circles img {
-    z-index: 0;
-} */
-
-
-
-/* Section 3 */

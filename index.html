@@ -9,23 +9,23 @@
     <title>Finney's Portfolio</title>
 </head>
 <body>
-    <section class="section1">
+    <section class="section1" id="section1">
         <nav>
             <div class="nav-section">
                 <div class="brand-name">Finn</div>
                 <ul class="nav-items">
                         <li class="nav-item">
-                            <a href="#" class="nav-link nav-home">Home</a>
+                            <a href="#section1" class="nav-link nav-home" onclick="closeMenu()">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Work</a>
+                            <a href="#section2" class="nav-link" onclick="closeMenu()">Work</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Technology</a>
+                            <a href="#section3" class="nav-link" onclick="closeMenu()">Contact</a>
                         </li>
                     </ul>
                     <div class="action-call">
-                        <a href="#" class="nav-link">Let's Create</a>
+                        <a href="#section3" class="nav-link" onclick="closeMenu()">Let's Create</a>
                     </div>
                 <div class="navbar-toggle-btn">
                     <img src="/assets/icons8-menu-rounded-50.png" alt="Menu toggle">
@@ -39,12 +39,12 @@
             <div class="hero-content-container">
                 <h1>Hi, I'm <span class="hero-finney">Finney</span></h1>
                 <p class="hero-content-bio">A self-taught full stack developer</p>
-                <p class="hero-content-portfolio">Portfolio <span><img src="assets/Arrow 1.png" alt="Right Arrow"></span></p>
+                <a href="#section2" class="hero-content-portfolio">Portfolio <span><img src="assets/Arrow 1.png" alt="Right Arrow"></span></a>
             </div>
         </div>
     </section>
 
-    <section class="section2">
+    <section class="section2" id="section2">
         <div class="projects-container">
             <div class="project project1">
                 <img src="/assets/project/room.jpg" alt="A well lit space with chairs and a lamp">
@@ -77,13 +77,10 @@
                 <p>Elementum nisi quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices</p>
             </div>
         </div>
-        <!-- <div class="arrow-down">
-            <img src="/assets/dashicons_arrow-down-alt2.png" alt="An arrowing pointing south">
-        </div> -->
     </section>
 
 
-    <section class="section3">
+    <section class="section3" id="section3">
         <div class="contact-container">
             <div class="contact-circle">
                 <form method="post" name="contact" class="contact-form" netlify>
@@ -100,8 +97,5 @@
             </div>
         </div>
     </section> 
-        <!-- <div class="background-circles">
-            <img src="assets/Background-circles.png" alt="Three orange semi-transparent circles">
-        </div>
 </body>
 </html>
