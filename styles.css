@@ -167,6 +167,21 @@ nav {
     width: 1.3rem;
     cursor: pointer;
 }
+.external-btns {
+    display: flex;
+    margin-top: 0.5rem;
+    justify-content: center;
+}
+.external-btns a {
+    width: 1rem;
+    background: none;
+    margin-right: 1rem;
+    display: flex;
+}
+.external-btns img {
+    width: 100%;
+    background: none;
+}
 
 /* section 2 */
 
@@ -382,6 +397,10 @@ nav {
     }
     .hero-content-container h1, .hero-content-bio, .hero-content-portfolio {
         text-align: left;
+    }
+
+    .external-btns {
+        justify-content: flex-start;
     }
 
     .section3 {
