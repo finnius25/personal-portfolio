@@ -39,6 +39,7 @@ body {
     background-color: var(--background-color);
     margin: 0;
     padding: 0;
+    
 }
 
 section {
@@ -97,7 +98,6 @@ nav {
 
 .active-nav {
     background: var(--background-color);
-    /* color: var(--background-color); */
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -195,6 +195,7 @@ nav {
     object-fit: cover;
 }
 
+
 .project h1 {
     margin: 1.875rem auto 0.8rem;
     font-weight: 700;
@@ -205,6 +206,16 @@ nav {
     line-height: 150%;
     font-weight: 300;
     font-size: 1rem;
+}
+
+.module-img {
+    display: none;
+}
+.module-header {
+    display: none;
+}
+.module-description {
+    display: none;
 }
 
 /* Section 3 */
@@ -288,6 +299,59 @@ nav {
         display: grid;
         grid-template-columns: 21.625rem 21.625rem;
         gap: 3.75rem;
+    }
+    
+    .module-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100vh;
+        background: black;
+        opacity: 0.7;
+        display: none;
+    }
+
+    .module {
+        width: 39rem;
+        height: 45rem;
+        position: fixed;
+        top: 2rem;
+        left: 25rem;
+        background: black;
+        border-radius: 20px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .module-content {
+        width: 35rem;
+        height: auto;
+        padding-bottom: 2.6rem;
+        display: none;
+    }
+
+    .module-img {
+        width: 100%;
+        max-height: 11rem;
+        object-fit: cover;
+        border-radius: 1rem;
+    }
+    .module-header {
+        margin: 1.875rem auto 0.8rem;
+        font-weight: 700;
+        font-size: 2.5rem;
+        color: white;
+    }
+    .module-description {
+        line-height: 150%;
+        font-weight: 300;
+        font-size: 1rem;
+        color: white;
     }
 }
 
