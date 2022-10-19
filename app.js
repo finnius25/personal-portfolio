@@ -88,9 +88,7 @@ if (mediaQuery.matches) {
         displayModuleHeader();
 
         function displayModuleDescription() {
-          moduleDescription.innerHTML =
-            project.lastElementChild.innerHTML +
-            " .Elementum nisi quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel assumenda fugit, porro at esse amet, quisquam repellendus asperiores culpa minima eum incidunt, fuga est architecto unde in nisi voluptas natus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident voluptate earum vero suscipit minus. Recusandae architecto commodi ut eum aperiam maiores officiis error quam, quos distinctio, dolores incidunt enim ullam.";
+          moduleDescription.innerHTML = project.lastElementChild.innerHTML;
         }
         displayModuleDescription();
       });
